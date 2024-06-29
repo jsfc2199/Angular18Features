@@ -15,4 +15,28 @@
       <p>Adios Mundo</p>
     }
   </div>
+
+    <!-- @switch -->
+    <div class="™bg-white rounded shadow p-10">
+      <h1 class="text-3xl">{{grade()}}</h1>
+
+      @switch( grade() ){
+        @case('A'){
+          <p>Arriba de noventa</p>
+        }
+        @case('B'){
+          <p>Menos de noventa</p>
+        }
+        @case('F'){
+          <p>Reprobado</p>
+        }
+        @default{
+          <p>No hay nota</p>
+        }
+      }
+
+    </div>
 </section>
+
+
+
