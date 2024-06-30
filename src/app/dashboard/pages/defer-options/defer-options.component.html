@@ -1,0 +1,14 @@
+<app-title [title]="'Defer with options'"></app-title>
+
+<section>
+  <h1 class="text-xl">Interacciones</h1>
+  <hr class="my-2">
+  @defer (on interaction) {
+    <app-heavy-loaders-fast [cssClass]="'bg-blue-500 h-20'">
+      <!-- podemos usar el span ya que estamos usando el ng content -->
+      <span>On Interaction</span>
+    </app-heavy-loaders-fast>
+  }@placeholder {
+    <p class="w-full h-20 bg-purple-200">No hay interacción, haga click</p>
+  }
+</section>
