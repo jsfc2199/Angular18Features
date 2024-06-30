@@ -21,7 +21,14 @@ export const routes: Routes = [
   },
   {
     path:'',
-    redirectTo:'/dashboard',
+    // redirectTo:'/dashboard',
+    redirectTo: (route) => {
+      //nuevas configuraciones en el router
+      // console.log(route)
+      // const authService = inject(AuthService)
+      // if(authService.login)
+      return '/dashboard'
+    },
     pathMatch: 'full'
   }
 ];
