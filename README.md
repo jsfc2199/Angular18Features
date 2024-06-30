@@ -32,3 +32,9 @@ Esta sección está dedicada a explorar nuevas funcionalidades en Angular, puntu
 
 
 Es una sección cargada de información útil para mejorar la experiencia en el desarrollo de Angular.
+
+## documentacion nueva respecto a angular material 3
+
+https://material.angular.io/guide/typography
+
+https://material.angular.io
