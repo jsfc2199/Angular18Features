@@ -38,8 +38,19 @@ export default class InputOutputComponent {
     take(7)
   ).subscribe()
 
+  //la ventaja de usar inputs y outputs como señales es que angular sabe exactamente el lugar donde se cambió la data en vez de verificar toda la app
+  updateIncrement(product: Product, newQuantity: number){
+    this.products.update((products) =>
+      products.map((p) =>
+        p.id === product.id ? {...p, quantity: newQuantity} : p
+      )
+    )
+  }
+
   ngOnDestroy(): void {
     this.internalSubscription.unsubscribe()
 
   }
+
+
 }
